@@ -10,12 +10,7 @@ namespace InterfaceEx1
         void OnScreen();
     }
 
-    interface ISwitchAll // объявление интерфейса 2
-    {
-        void FlatSwitchOffAll();
-    }
-
-    class TV : ISwitchable //реализация интерфейса 1
+   class TV : ISwitchable //реализация интерфейса 1
     
     {
         public int Value;
