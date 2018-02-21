@@ -11,6 +11,7 @@ namespace InterfaceEx1
         {
             Value = b ? 1 : 0;
         }
+
         public void Switchon()
         {
             Value = 1;
