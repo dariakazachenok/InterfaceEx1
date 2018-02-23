@@ -3,7 +3,7 @@
 
 namespace InterfaceEx1
 {
-    class TV : ISwitchable //реализация интерфейса 1
+    class TV : Switchable //реализация наследования
     
     {
         public int Value;
@@ -12,18 +12,18 @@ namespace InterfaceEx1
             Value = b ? 1 : 0;
         }
 
-        public void Switchon()
+        public override void Switchon()
         {
             Value = 1;
             Console.WriteLine("TV on");
         }
 
-        public void Switchoff()
+        public override void Switchoff()
         {
             Value = 0;
             Console.WriteLine("TV off");
         }
-        public void OnScreen()
+        public override void OnScreen()
         {
             Console.WriteLine(Value == 1 ? "TV on" : "TV off");
         }

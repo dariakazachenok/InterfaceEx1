@@ -11,7 +11,7 @@ namespace InterfaceEx1
             Computer com1 = new Computer(true);
             Lamp lp1 = new Lamp(true);
 
-            List<ISwitchable> devices = new List<ISwitchable> {tv1, com1, lp1};
+            List<Switchable> devices = new List<Switchable> {tv1, com1, lp1};
             tv1 = (TV) devices[0];
             com1 = (Computer)devices[1];
             lp1 = (Lamp)devices[2];
